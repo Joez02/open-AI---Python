@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studienplaner</title>
+<meta name="description" content="Lernpläne, Themen und Termine fürs Studium, abgeglichen mit deinem Google Kalender.">
+<meta name="theme-color" content="#F6F7F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111418" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app" id="app">
+  <main class="screen" id="screen" tabindex="-1"></main>
+  <nav class="tabbar" id="tabbar" aria-label="Bereiche" hidden>
+    <button class="tab" data-action="tab" data-tab="heute"><span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="4" style="fill:none;stroke:currentColor" stroke-width="1.9"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7" style="fill:none;stroke:currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>Heute</button>
+    <button class="tab" data-action="tab" data-tab="module"><span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 4l8 4-8 4-8-4 8-4z" style="fill:none;stroke:currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M4 12.2l8 4 8-4M4 16.2l8 4 8-4" style="fill:none;stroke:currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Module</button>
+    <button class="tab" data-action="tab" data-tab="plan"><span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3.8" y="5" width="16.4" height="15" rx="2.5" style="fill:none;stroke:currentColor" stroke-width="1.9"/><path d="M3.8 10h16.4M8.5 3v4M15.5 3v4" style="fill:none;stroke:currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span>Plan</button>
+    <button class="tab" data-action="tab" data-tab="zeit"><span class="ic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 6.5h9M8 12h11M6 17.5h7" style="fill:none;stroke:currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>Zeitplan</button>
+  </nav>
+  <div class="scrim" id="scrim" data-action="close" hidden></div>
+  <section class="sheet" id="sheet" role="dialog" aria-modal="true" hidden></section>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</div>
+<noscript>Bitte aktiviere JavaScript, um den Studienplaner zu nutzen.</noscript>
+<script src="app.js"></script>
+</body>
+</html>

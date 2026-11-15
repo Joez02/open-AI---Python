@@ -1,6 +1,6 @@
 # Studienplaner – Vision & Konzept
 
-*Stand: 15.11.2026 · Status: Entwurf, wird gemeinsam weiterentwickelt*
+*Stand: 15.11.2026 · Status: Version 1.0 gebaut (Stufe 1 und 2), Einrichtung siehe [ANLEITUNG.md](ANLEITUNG.md)*
 
 ---
 
@@ -104,14 +104,15 @@ Alle Daten liegen in deinem Google-Konto. Deshalb kann Claude über die Verbindu
 
 ---
 
-## 5. Technik-Empfehlung (in einfachen Worten)
+## 5. Technik (in einfachen Worten)
 
 Du musst nicht programmieren. Claude baut die App, du testest sie und gibst Feedback.
 
 - **Web-App, die sich wie eine echte App installieren lässt (PWA):** Du öffnest einen Link in Chrome auf deinem Android-Handy und tippst auf „App installieren“. Die App liegt dann mit eigenem Symbol auf dem Startbildschirm. Die PC-Version gibt es damit automatisch dazu.
-- **Anmeldung mit deinem Google-Konto.** Es gibt keinen eigenen Server mit Datenbank, der gewartet werden muss.
-- **Kostenloses Hosting.**
-- **Einmalige Einrichtung (ca. 30 Minuten):** Google-Zugriff freischalten und ILIAS-Kalender verbinden. Claude leitet dich dabei Schritt für Schritt an.
+- **Kostenlos veröffentlicht über GitHub Pages.**
+- **Ein kleines Google-Skript in deinem eigenen Google-Konto** verbindet die App mit Kalender und Tabelle. Es gibt keinen fremden Server und keine Anmeldung bei jedem Start. Ein geheimer Schlüssel schützt den Zugriff.
+- **Offline-fähig:** Die App startet ohne Netz. Änderungen werden übertragen, sobald du wieder online bist.
+- **Einmalige Einrichtung (ca. 30 Minuten):** Die App führt dich durch, Details stehen in [ANLEITUNG.md](ANLEITUNG.md).
 
 ---
 
@@ -136,8 +137,10 @@ Du musst nicht programmieren. Claude baut die App, du testest sie und gibst Feed
 - **Google Tasks:** entfällt
 - **Design:** minimalistisch, clean, visuell
 
-## 8. Nächste Schritte
+## 8. Stand und nächste Schritte
 
-1. Klickbaren Entwurf ansehen und Feedback geben
-2. Entwurf anpassen, bis Aufbau und Bedienung passen
-3. Stufe 1 als echte App bauen und mit Google verbinden
+- [x] Klickbaren Entwurf abgestimmt
+- [x] Version 1.0 gebaut: Stufe 1 (Überblick) und Stufe 2 (Planungshilfe) komplett, dazu Offline-Modus und Verbindung weiterer Geräte per QR-Code
+- [ ] App online stellen und einrichten (siehe [ANLEITUNG.md](ANLEITUNG.md))
+- [ ] Ein paar Wochen nutzen und Feedback sammeln
+- [ ] Stufe 3: Push-Erinnerungen, Steuerberaterprüfung (ab 2027)
